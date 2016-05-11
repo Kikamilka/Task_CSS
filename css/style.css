@@ -1,0 +1,48 @@
+body {
+	background-color: lightblue;
+	height: 5000px;
+}
+
+nav {
+	position: fixed;
+	top	: 50%;
+	margin-top: -220px;
+	margin-left: -170px;
+	-webkit-transition: all 2s; /* Safari */
+	transition: all 2s;
+	opacity: 0.5; /* Полупрозрачный фон */
+}
+
+nav ul li {
+	display: block;
+	width: 140px;
+	height: 140px;
+	border: 1px solid black;
+	margin: 1px;
+	background-size: 100px 100px;
+	background-repeat:no-repeat;
+	background-position: center; 
+	background-color: lightgray;
+	cursor:pointer;
+	vertical-align: center;
+	position: relative;
+	z-index: 9999;
+}
+
+nav:hover {
+	margin-left: 10px;
+	opacity: 1;
+}
+
+nav ul li[class=”vk”] {
+	background-image:url(https://cdn0.iconfinder.com/data/icons/yooicons_set01_socialbookmarks/256/social_facebook_box_blue.png);
+}
+
+nav ul li[class=”twitter”] {
+	background-image:url(https://cdn0.iconfinder.com/data/icons/yooicons_set01_socialbookmarks/512/social_twitter_button_blue.png);
+}
+
+nav ul li[class=”github”] {
+	background-image:url(https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png);
+}
+
