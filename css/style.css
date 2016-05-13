@@ -1,6 +1,14 @@
 body {
-	background-color: lightblue;
+	background-color: #A5D7F3;
 	height: 5000px;
+	background: linear-gradient(to right, #FDE9FA, #B6C7F2);
+}
+
+@media only screen and (max-width: 500px) {
+	body {
+		background-color: #DF2581;
+		background: linear-gradient(to right, #270221, #FFE400);
+	}
 }
 
 nav {
@@ -8,8 +16,8 @@ nav {
 	top	: 50%;
 	margin-top: -220px;
 	margin-left: -170px;
-	-webkit-transition: all 2s; /* Safari */
-	transition: all 2s;
+	-webkit-transition: opacity, transform 2s; /* Safari */
+	transition: opacity, transform 2s; /*!указывать что именно меняем*/
 	opacity: 0.5; /* Полупрозрачный фон */
 }
 
@@ -22,7 +30,7 @@ nav ul li {
 	background-size: 100px 100px;
 	background-repeat:no-repeat;
 	background-position: center; 
-	background-color: lightgray;
+	background-color: #EBECEC;
 	cursor:pointer;
 	vertical-align: center;
 	position: relative;
@@ -30,7 +38,7 @@ nav ul li {
 }
 
 nav:hover {
-	margin-left: 10px;
+	transform: translateX(200px); /* не стоит тут делать margin! */
 	opacity: 1;
 }
 
